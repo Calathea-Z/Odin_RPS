@@ -16,5 +16,16 @@
       return choices[randomIndex];
     };
 
-   
-    alert(getComputerChoice());
+    function getPlayerChoice(){
+      let playerChoice = prompt("Type Your Choice! (0) Rock, (1) Paper, (2) Scissors");
+      player.currentChoice = choices[playerChoice];
+      return choices[playerChoice];
+    }
+
+    getComputerChoice();
+    console.log("The computer chose " + computer.currentChoice + ".");
+    
+    getPlayerChoice();
+    console.log("You chose " + player.currentChoice + ".");
+
+ 
